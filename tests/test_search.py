@@ -1,6 +1,6 @@
 import pytest
 import json
-from pubmed import PubMed
+from pubmed_sdk import PubMed
 
 def test_pubmed_search():
     pubmed = PubMed()

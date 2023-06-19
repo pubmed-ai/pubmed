@@ -7,9 +7,9 @@ with open('README.md', 'rt') as f:
     long_description = f.read()
 
 setup(
-    name="pubmed",
+    name="pubmed_sdk",
     version="0.1",
-    packages=['pubmed'],
+    packages=['pubmed_sdk'],
     install_requires=required,
     author="Leo Sternlicht",
     author_email="lsternlicht@gmail.com",
@@ -18,7 +18,7 @@ setup(
     long_description_content_type='text/markdown',
     license="MIT",
     keywords="pubmed ncbi e-utilities sdk, pubmed api",
-    url="http://github.com/yourusername/pubmed_sdk",   # project home page, if any
+    url="http://github.com/pubmed-ai/pubmed_sdk",   # project home page, if any
     classifiers=[
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
