@@ -1,6 +1,11 @@
+try:
+    import better_exceptions
+except:
+    pass
 from setuptools import setup
 
-with open('requirements.txt') as f:
+
+with open('./requirements.txt') as f:
     required = f.read().splitlines()
 
 with open('README.md', 'rt') as f:
