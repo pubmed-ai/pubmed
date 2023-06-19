@@ -53,7 +53,7 @@ After searching, you can fetch the details of the articles using the fetch_detai
 
 ```python
 id_list = results['id_list']    # ['33725716', '33725717']
-details = pubmed.fetch_details(id_list)
+details = pubmed.fetch_details(id_list).get('PubmedArticle')
 ```
 
 This method accepts a list of IDs and returns a list of dictionaries containing the details of each article.
@@ -62,7 +62,7 @@ Here's an example of how to iterate through the results and print some informati
 
 ```python
 for detail in details:
-    article = detail['PubmedArticle']['MedlineCitation']['Article']
+    article = detail['MedlineCitation']['Article']
     print(article['ArticleTitle'])
-    print(article['Abstract']['AbstractText'][0])
+    print(article['Abstract']['AbstractText'], '\n\n')
 ```
