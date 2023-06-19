@@ -13,7 +13,7 @@ with open('README.md', 'rt') as f:
 
 setup(
     name="pubmed_sdk",
-    version="0.3",
+    version="0.4",
     packages=['pubmed_sdk'],
     install_requires=required,
     author="Leo Sternlicht",
