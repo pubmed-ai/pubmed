@@ -30,7 +30,7 @@ pip install pubmed_sdk
 ## Usage
 
 ### Search PubMed
-You can search PubMed by creating a `PubMed`` object and calling the `search`` method with your search term:
+You can search PubMed by creating a `PubMed` object and calling the `search` method with your search term:
 
 ```python
 from pubmed_sdk import PubMed
@@ -40,7 +40,7 @@ results = pubmed.search('COVID-19')
 ```
 
 
-The `search`` method supports the following parameters:
+The `search` method supports the following parameters:
 
 * **term**: The search term.
 * **db**: The database to search (default is 'pubmed').
